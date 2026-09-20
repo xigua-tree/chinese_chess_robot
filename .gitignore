@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code 本地配置（含本机绝对路径，不入 git）
+.claude/
+
+# 模型文件（大文件，需单独下载到 models/ 和 voice/vits_model/）
+*.onnx
+*.pt
+*.pth
+*.nnue
+
+# 语音模型目录（太大不能入 git）
+voice/vits_model/
+
+# 引擎可执行文件（太大不能入 git）
+engines/pikafish/pikafish-*
+engines/pbrain-rapfi/pbrain-*
+gomoku/gomoku_engine_binary/*.exe
+
+# 标定数据（每个硬件不同，保留空目录 + README）
+# calibration_data/*.npz
+# calibration_data/*.npy
+
+# 图片和训练数据
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# 训练缓存
+*.cache
+
+# 日志
+*.log
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# Qt 编译产物（如果 gui/ 下有源码）
+gui/*.exe
+gui/*.dll
+gui/*.qm
+QT/
